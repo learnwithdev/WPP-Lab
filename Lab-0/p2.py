@@ -4,4 +4,4 @@ def fact(n):
     else:
         factorial=n*fact(n-1)
         return factorial
-print(fact(6))
+print(f"The factorial of 6 is: {fact(6)}")
