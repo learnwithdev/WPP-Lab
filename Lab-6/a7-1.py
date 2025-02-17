@@ -20,9 +20,10 @@ class Password_manager:
 pm = Password_manager()
 user=input("Enter Password: ")
 if pm.is_correct(user):
+    print("Access Granted!")
     new_pwd = input("Enter new password: ")
     pm.set_pwd = new_pwd
     print(f"Current password changed to: {pm.get_pwd}")
-    print(f"Old passwords: {pm._old_passwords}")
+    # print(f"Old passwords: {pm._old_passwords}")
 else:
     print("Incorrect Password")
