@@ -12,10 +12,5 @@ for m,k in enumerate(l):
             break
     if count!=0:
         break
-        # if temp>i and j==len(s)-1:
-        #     l[0] = l[j]
-        #     l[j] = temp
-        # else:
-        #     count+=1
 l = [chr(i) for i in l]
 print(''.join(l[::-1]))

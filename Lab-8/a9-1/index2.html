@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Deals Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background: url('background.jpg') no-repeat center center/cover;
+            color: #333;
+        }
+        .navbar {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            background: transparent;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            opacity: 0.8;
+        }
+        .navbar:hover {
+            opacity: 1;
+        }
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 10px 15px;
+        }
+        header {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 50px;
+            color: white;
+        }
+        .header-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2019/12/home-new-bg-free-img.jpg') no-repeat center center/cover;
+            filter: brightness(60%);
+            z-index: -1;
+        }
+        .header-buttons {
+            margin-top: 20px;
+        }
+        .header-buttons button {
+            font-size: 14px;
+            padding: 15px 20px;
+            cursor: pointer;
+            margin: 10px;
+            border: 2px solid white;
+            transition: all .3s ease;
+        }
+        .header-buttons button:first-child {
+            background: white;
+            color: black;
+        }
+        .header-buttons button:first-child:hover {
+            background: black;
+            color: white;
+        }
+        .header-buttons button:last-child {
+            background: transparent;
+            color: white;
+        }
+        .header-buttons button:last-child:hover {
+            background: white;
+            color: black;
+        }
+        #offers, #featured-products, #payment-methods, footer {
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+        }
+        .products-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 200px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Super Deals Store</div>
+        <ul>
+            <li><a href="#offers">Offers</a></li>
+            <li><a href="#featured-products">Featured Products</a></li>
+            <li><a href="#payment-methods">Payment Methods</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <header>
+        <div class="header-bg"></div>
+        <h1>Super Deals Store</h1>
+        <p>Best Discounts & Offers!</p>
+        <div class="header-buttons">
+            <button>Shop Now</button>
+            <button>Find More</button>
+        </div>
+    </header>
+    
+    <section id="offers">
+        <h2>Exclusive Offers</h2>
+        <p>🔥 Flat 50% off on Electronics | Buy 1 Get 1 Free on Apparel | Extra 10% off with UPI</p>
+    </section>
+
+    <section id="featured-products">
+        <h2>Featured Products</h2>
+        <div class="blue-line"></div>
+        <div class="products-container">
+            <div class="product">
+                <img src="headphones.jpg" alt="Headphones">
+                <h3>Wireless Headphones</h3>
+                <p>Price: <del>₹5,000</del> ₹3,500</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="smartwatch.jpg" alt="Smartwatch">
+                <h3>Smartwatch</h3>
+                <p>Price: <del>₹10,000</del> ₹7,500</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="phone.jpg" alt="Smartphone">
+                <h3>Smartphone</h3>
+                <p>Price: <del>₹30,000</del> ₹20,000</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="laptop.jpg" alt="Laptop">
+                <h3>Laptop</h3>
+                <p>Price: <del>₹60,000</del> ₹45,000</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Super Deals Store | Best Prices, Always!</p>
+    </footer>
+</body>
+</html>

@@ -12,3 +12,4 @@ for i in range(len(l)):
         if xor>=max:
             max=xor
 print(max)
+10
